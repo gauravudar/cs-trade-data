@@ -23,6 +23,15 @@ OPTIONS specific:
 - American option style will have in addition the excerciseStartDate, which has to be after the trade date but before the expiry date
 - expiry date and premium date shall be before delivery date
 
-Input for validation will be in JSON format
+Input for validation will be in JSON format of trade data.
 
-Output will be validation results
+Output will be validation results with trade identifier and error validation message.
+
+The project is build on Maven so one can import it using pom.xml and it uses spring boot so one can run it using maven goal mvn spring-boot:run.
+
+For testing the project you can use POSTMAN.
+
+The below link will help with validating the input json.
+
+"localhost:8080/tradeData/validate"
+
